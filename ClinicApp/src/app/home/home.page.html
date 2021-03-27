@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title class="ion-text-center">
+      My Clinic
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="dark">
+  <p>
+    <img src="assets\hospitals.png">
+  </p>
+
+  <ion-grid fixed color="success">
+    <ion-row>
+      <ion-col size="12">
+        <ion-button expanded="full" fill="outline" [routerLink]="['/appoint']">
+          <ion-icon slot="end" name="document-text"></ion-icon>
+          Appointments
+        </ion-button>
+      </ion-col>
+      <ion-col size="12">
+        <ion-button expanded="block" fill="outline" [routerLink]="['/gallery']">
+          <ion-icon slot="end" name="image"></ion-icon>
+          Gallery
+        </ion-button>
+      </ion-col>
+      <ion-col size="12">
+        <ion-button expanded="block" fill="outline" [routerLink]="['/contact']">
+          <ion-icon slot="end" name="call"></ion-icon>
+          Contact Us
+        </ion-button>
+      </ion-col>
+      <ion-col size="12">
+        <ion-button expanded="block" fill="outline" [routerLink]="['/login']">
+          <ion-icon slot="end" name="log-out"></ion-icon>
+          Logout
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
